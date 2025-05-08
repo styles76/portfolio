@@ -98,6 +98,10 @@ img{
         color:var(--first-color);    
 
     }
+    .section{
+        padding-block: 7rem;  /*left of @ 52:46*/
+
+    }
 
 
 
@@ -168,8 +172,8 @@ img{
     }
 
     .nav-toggle::before,
-    .nav-toggle::after{                /*=========left off @ 42:51=============*/
-        content: ""; 
+    .nav-toggle::after{
+        content: "";
         width: 100%;
         height: 2px;
         background-color: var(--title-color);
@@ -236,6 +240,90 @@ img{
 
 
        /*==========Home =============*/
+       .home-container{
+        padding:4.25rem;
+       }
+       .home-content{
+        position: relative;
+
+       }
+
+       .home-subtitle{
+        font-size: var(--larger-font-size);
+        font-weight: var(--font-semi-bold);
+        margin-bottom: 1rem;
+       }
+       .home-subtitle span,
+      .home-title span{
+        color:var(--first-color);
+
+      }
+      .home-title{
+        color:var(--white-color);
+        font-size: var(--big-font-size);
+        font-weight: var(--font-black);
+       -webkit-text-stroke: 2px hsl(0, 0%, 0%);
+       text-shadow: 4px 4px var(--shadow-color);
+      }
+      .home-job{
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-semi-bold);
+        margin-block:1.5rem 2.5rem;
+      }
+      .home-banner{
+        position: absolute;
+        right:0;
+        top:50%;
+        transform: translateY(-50%);
+      }
+      .home-img-wrapper{
+       width: clamp(1.3125rem, -14.9625rem + 65.1vw, 42rem);
+       border-radius: 0 0 100vw 100vw;
+       overflow: hidden;
+      }
+      .home-img-wrapper::before{
+        content:"";
+        position: absolute;
+        inset:auto 0 0;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: var(--first-color);
+      }
+      .home-profile{
+        position:relative;
+        z-index: 10;
+        aspect-ratio: 21/25;
+        object-fit: cover;
+      }
+      .home-data{
+        border:2px solid var(--border_color);
+        background-color: var(--container-color);
+        box-shadow: 4px 4px var(--shadow-color);
+        padding-inline:1.25rem;
+        width: 240px;
+        height: 80px;
+        border-radius: 3rem;
+        display: grid;
+        grid-template-columns: repeat(2, lfr);
+        align-items: center;
+        position: absolute;
+        z-index: 100;
+      }
+      .home-data-one{
+        bottom: 20%;
+       left: clamp(3.75rem, 5.85rem + -8.4vw, -1.5rem);
+      }
+      .home-data-two{
+        bottom: 12%;
+       right: clamp(-3rem, -5.2rem + 8.8vw, 2.5rem);
+      }
+      .home-data-no{
+        color:var(--title-color);
+        font-family: var(--second-font);
+        font-size: 2.25rem;
+        font-weight: var(--font-bold);
+        text-align: center;
+      }
 
 
        /*============= Services =================*/
