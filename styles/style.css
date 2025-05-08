@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Emblema+One&family=Jost:ital,wght@0,10");
+
+:root{
+    --hue:165;
+    --first-color:hsl(var(--hue), 60%, 40%);
+    --title-color: hsl(var(--hue), 4%, 12%);
+    --text-color: hsl(var(--hue), 4%, 20%);
+    --body-color:hsl(var(--hue), 30%, 92%);
+    --container-color:hsl(0, 0%, 100%);
+    --border_color:hsl(var(--hue),4%, 15%);
+    --white-color:hsl(o, 0%, 100%);
+    --shadow-color:hsla(var(--hue), 80%, 10%, 0.2);
+
+    --body-font: "jost", san-serif;
+
+    /*============= Font Sizes ========*/
+    --big-font-size: 5.5rem;
+    --h1-font-size: 2.75rem;
+    --h2-font-size:1.75rem;
+    --h3-font-size: 1.5rem;
+    --larger-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size:0.875rem;
+    --smallest-font-size:0.8125rem;
+
+
+
+    /*================== Font Weight ===================*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-black: 800;
+
+
+    /*================ Transistion =============*/
+
+    --transition: cubic-bezier(0.3, 0, 0.3,1);
+}
+/*responsive typography*/
+@media screen  and (max-width: 1024) {
+    
+}
+/*=============== dark them ===========*/
+/*=============== base ==================*/
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body,
+button,
+input,
+textarea {
+    color:  var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+body{
+    background-color: var(--body-color);
+}
+h1,
+h2,
+h3,
+h4{
+    color: var(--title-color);
+    font-family: var(--second-font);
+    font-weight: var(--font-bold);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display:block;
+    max-width: 100%;
+}
+  button,
+  input,
+  textarea{
+    border: none;
+    outline:none;
+    background-color: transparent;
+  }
+    /*=============reusable css classes=================*/
+
+
+
+
+
+
+    /*============== layout ====================*/
+    .container{
+        background-color: bisque;
+        max-width: 1320px;
+        margin-inline:auto ;
+        padding-inline: 1.5rem;
+
+     
+    }
+
+
+
+    /*============== header & nav =================*/
+    .header{
+        background-color: var(--first-color) ;
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        z-index: 1000;
+
+    }
+
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5rem;
+    }
+
+    /*Show Menu*/
+
+
+
+    /* active Link*/
+
+
+     /* change background header*/
+
+
+      /*============== main ===================*/
+
+
+       /*==========Home =============*/
+
+
+       /*============= Services =================*/
