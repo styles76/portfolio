@@ -89,12 +89,12 @@ img{
         display: inline-flex;
         column-gap: 1.25rem ;
     }
-    .social-links{
+    .social-link{
         color:var(--title-color);
         font-size: var(--h3-font-size);
         transition: color 0.7 var(--transition);
     }
-    .social-links:hover{
+    .social-link:hover{
         color:var(--first-color);    
 
     }
@@ -186,7 +186,7 @@ img{
     .nav-menu{
         position: fixed;
         top:0;
-        right:0;
+        right:-100%;
         background-color: var(--container-color);
         width: 512px;
         height: 100%;
@@ -207,7 +207,7 @@ img{
     color:var(--first-color);
 }
 
-/* left off @ 34:38*/
+/* left off @ 38:47*/
 
     /*Show Menu*/
 
