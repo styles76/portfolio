@@ -1,27 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Emblema+One&family=Jost:ital,wght@0,10");
+@import url("https://fonts.googleapis.com/css2?family=Emblema+One&family=Jost:ital,wght@100..900&family=Montserrat+Alternates:wght@600;700;800&display=swap");
 
 :root{
+    /*============== Colors ====================*/
     --hue:165;
     --first-color:hsl(var(--hue), 60%, 40%);
     --title-color: hsl(var(--hue), 4%, 12%);
     --text-color: hsl(var(--hue), 4%, 20%);
     --body-color:hsl(var(--hue), 30%, 92%);
     --container-color:hsl(0, 0%, 100%);
-    --border_color:hsl(var(--hue),4%, 15%);
-    --white-color:hsl(o, 0%, 100%);
+    --border_color:hsl(var(--hue), 4%, 16%);
+    --white-color:hsl(0, 0%, 100%);
     --shadow-color:hsla(var(--hue), 80%, 10%, 0.2);
 
-    --body-font: "jost", san-serif;
+ /*=========== Font Family ==================*/
+    --body-font: "jost", sans-serif;
+    --second-font:"Montserrat Alternates", sans-serif;
 
     /*============= Font Sizes ========*/
     --big-font-size: 5.5rem;
     --h1-font-size: 2.75rem;
     --h2-font-size:1.75rem;
     --h3-font-size: 1.5rem;
-    --larger-font-size: 1.125rem;
+    --larger-font-size: 1.25rem;
+    --large-font-size: 1.125;
     --normal-font-size: 1rem;
     --small-font-size:0.875rem;
-    --smallest-font-size:0.8125rem;
+    --smaller-font-size:0.8125rem;
 
 
 
@@ -34,7 +38,7 @@
 
     /*================ Transistion =============*/
 
-    --transition: cubic-bezier(0.3, 0, 0.3,1);
+    --transition: cubic-bezier(0.3, 0, 0.3, 1);
 }
 /*responsive typography*/
 @media screen  and (max-width: 1024) {
@@ -99,7 +103,7 @@ img{
 
     }
     .section{
-        padding-block: 7rem;  /*left of @ 52:46*/
+        padding-block: 7rem;  
 
     }
 
@@ -139,7 +143,7 @@ img{
     }
 
 
-    .nav-log,
+    .nav-logo,
     .nav-link{
         color: var(--title-color);
         font-weight: var(--font-bold);
@@ -241,7 +245,7 @@ img{
 
        /*==========Home =============*/
        .home-container{
-        padding:4.25rem;
+        padding-block:4.25rem;
        }
        .home-content{
         position: relative;
@@ -249,7 +253,7 @@ img{
        }
 
        .home-subtitle{
-        font-size: var(--larger-font-size);
+        font-size: var(--large-font-size);
         font-weight: var(--font-semi-bold);
         margin-bottom: 1rem;
        }
@@ -311,7 +315,7 @@ img{
       }
       .home-data-one{
         bottom: 20%;
-       left: clamp(3.75rem, 5.85rem + -8.4vw, -1.5rem);
+       left: clamp(-3.75rem, -4.65rem + 3.6vw, -1.5rem);
       }
       .home-data-two{
         bottom: 12%;
@@ -324,6 +328,41 @@ img{
         font-weight: var(--font-bold);
         text-align: center;
       }
+      .home-data-title{
+        font-size: var(--smaller-font-size);
 
+      }
+      .home-data-title span{
+        color:var(--first-color);
+      }
+      .shape{
+        position: absolute;
+        z-index: -10;
+      }
+      .shape-1{
+       width: clamp(6.5rem, 3.5rem + 12vw, 14rem);
+       top:9%;
+       right:6%;
+      }
+      .shape-2,
+      .shape-3  {
+        width: clamp(4rem, 2.1rem + 7.6vw, 8.75rem);
+      }
+      .shape-2{
+        bottom:8%;
+        left:-12%;
+      }
+      .shape-3{
+        bottom:0;
+        right:-2%;
+      }
+      .home-description{
+        font-size: var(--large-font-size);
+        max-width: 520px;
+      }
+      .home-socials{
+        margin-block: 1.75rem 2.5rem;
+      }
+                   /*=========left off @ 1:12:28==========*/
 
        /*============= Services =================*/
